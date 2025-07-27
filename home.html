@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+<div class="container">
+<h2>Welcome to Notes & Password Manager</h2>
+<p>Select an option below:</p>
+<button onclick="goToNotes()">Notes</button>
+<button onclick="goToPasswords()">Passwords</button>
+<button class="logout" onclick="logout()">Logout</button>
+</div>
+<script>
+function goToNotes() {
+window.location.href = "notes.html";
+}
+function goToPasswords() {
+window.location.href = "passwords.html";
+}
+function logout() {
+    alert("Logging out...");
+window.location.href = "login.html";
+}
+</script>
+</body>
+</html>
